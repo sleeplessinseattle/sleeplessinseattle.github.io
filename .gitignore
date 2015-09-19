@@ -1,0 +1,10 @@
+/.codekit-cache
+/_design
+.*.sw[op]
+.sass-cache
+*.scssc
+*.bowerrc
+*.DS_Store
+/.idea
+/_bak
+.codekit
