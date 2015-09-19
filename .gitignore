@@ -7,4 +7,4 @@
 *.DS_Store
 /.idea
 /_bak
-.codekit
+*.codekit
