@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+	<link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+	<title>Sleepless in Seattle</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+	{% block head %}{% endblock %}
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-55968875-2', 'auto');
+		ga('create', 'UA-53259302-3', 'auto', {'name':'eddieTracker'});
+
+		ga('send', 'pageview');
+		ga('eddieTracker.send', 'pageview');
+	</script>
+</head>
+<body>
+<div class="page-wrap">
+	<div id="fb-root"></div>
+	<div class="content-wrap">
+		<nav class="nav">
+			<span class="nav-item">
+			    <a href="{{ url_for('about') }}">About Us</a>
+			    <a href="{{ url_for('volunteer') }}">Volunteer</a>
+			    <a href="{{ url_for('donate') }}">Donate</a>
+			    <a href="{{ url_for('contact') }}">Contact</a>
+			    <a href="{{ url_for('press_kit') }}">Press Kit</a>
+			</span>
+			<span class="fb nav-item"><div class="fb-like" data-href="https://www.facebook.com/sleeplessinseattlegiving" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></span>
+		</nav>
+		<div class="clear"></div>
+		<header>
+			<a href="{{ url_for('home') }}"><img class="logo" src="{{ url_for('static', filename='img/header.png') }}"></a>
+		</header>
+		<main>
+	        {% block content %}{% endblock %}
+		</main>
+	</div>
+	<div class="push"></div>
+</div>
+
+<footer>
+	<nav class="width-wrap">
+		<ul>
+			<li><a href="{{ url_for('about') }}">About</a></li>
+			<li><a href="{{ url_for('contact') }}">Contact</a></li>
+			<li><a href="{{ url_for('donate') }}">Donate</a></li>
+		</ul>
+		<ul>
+			<li><a href="https://www.facebook.com/sleeplessinseattlegiving">Facebook</a></li>
+			<li><a href="https://twitter.com/seattlesleeping">Twitter</a></li>
+		</ul>
+	</nav>
+</footer>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

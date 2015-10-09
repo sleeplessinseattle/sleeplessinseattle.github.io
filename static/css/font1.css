@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'socials';
+  src: url('../otr/socials/socials.eot?-818jet');
+  src: url('../otr/socials/socials.eot?#iefix-818jet') format('embedded-opentype'),
+    url('../otr/socials/socials.woff?-818jet') format('woff'),
+    url('../otr/socials/socials.ttf?-818jet') format('truetype'),
+    url('../otr/socials/socials.svg?-818jet#socials') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+  [class^="ico-"], [class*="ico-"] {
+    font-family: 'socials';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+    .ico-mail:before {
+      content: ""; }
+
+      .ico-facebook:before {
+        content: ""; }
+
+        .ico-instagram:before {
+          content: ""; }
+
+          .ico-twitter:before {
+            content: ""; }

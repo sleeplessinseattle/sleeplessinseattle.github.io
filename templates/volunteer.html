@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="section info">
+    <h1>Volunteer with Sleepless in Seattle 2015</h1>
+    <p><strong>Thank you for your interest in volunteering with Sleepless in Seattle!</strong></p>
+    <p>Volunteer opportunities are available for people regardless of experience and qualifications. We ask only that any students younger than 16 years old come accompanied by an adult.</p>
+    <p>To get started, please fill out this volunteer signup form, and we will get back to you with a number of placement options including the Big Give on Saturday 11/21/2015.</p>
+    <p>As a volunteer, you will have the opportunity to:</p>
+    <ol>
+        <li>Serve those on the streets directly to meet immediate needs, provide emotional support and friendship, and refer individuals to appropriate social services.</li>
+        <li>Be exposed to the reality of living on the streets of King County.</li>
+        <li>Learn sensitivity and relational skills by serving side by side with experienced volunteers.</li>
+    </ol>
+    <div class="clear"></div>
+    <img src="{{ url_for('static', filename='img/photo/1.jpg') }}" alt="Photo of big give">
+    <img src="{{ url_for('static', filename='img/photo/6.jpg') }}" alt="Photo of big give">
+    <img src="{{ url_for('static', filename='img/photo/5.jpg') }}" alt="Photo of big give">
+    <img src="{{ url_for('static', filename='img/photo/7.jpg') }}" alt="Photo of big give">
+    <img src="{{ url_for('static', filename='img/photo/2.jpg') }}" alt="Photo of big give">
+    <img src="{{ url_for('static', filename='img/photo/4.jpg') }}" alt="Photo of big give">
+    <img src="{{ url_for('static', filename='img/photo/3.jpg') }}" alt="Photo of big give">
+    <img src="{{ url_for('static', filename='img/photo/8.jpg') }}" alt="Photo of big give">
+    <p>Looking for alternative ways to serve the homeless in King County? Take a look at our list of <a href="https://docs.google.com/spreadsheets/u/1/d/1zmWO18EKeYJVOMUQ4lwx00rlJyFxtGwJgzw5vqOvv3g/edit#gid=0">volunteer opportunities</a> from non-profits around the community.</p>
+</section>
+{% endblock %}
