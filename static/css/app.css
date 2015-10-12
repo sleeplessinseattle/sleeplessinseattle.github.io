@@ -208,18 +208,23 @@
           position: relative;
           padding-right: 2rem;
           margin: 1em 0; }
-          .info img {
-            max-width: 100%; }
-            .info .docblock {
-              margin-top: 3.5rem; }
-              .info .map-location {
-                background-color: rgba(255, 255, 255, 0.1); }
-                .info table td {
-                  padding: 0.3rem 0.7rem; }
-                  .info table td:nth-child(2) {
-                    border-left: 1px solid white; }
-                    .info table td:first-of-type {
-                      text-align: right; }
+          .info .caption {
+            font-style: italic; }
+            .info img {
+              max-width: 100%; }
+              .info .signup {
+                text-align: center;
+                font-size: 150%; }
+  .info .docblock {
+    margin-top: 3.5rem; }
+    .info .map-location {
+      background-color: rgba(255, 255, 255, 0.1); }
+      .info table td {
+        padding: 0.3rem 0.7rem; }
+        .info table td:nth-child(2) {
+          border-left: 1px solid white; }
+          .info table td:first-of-type {
+            text-align: right; }
   .info.center {
     text-align: center; }
     .info .clear {

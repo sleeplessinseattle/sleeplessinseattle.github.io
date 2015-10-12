@@ -247,9 +247,19 @@ header {
 		padding-right: 2rem;
 		margin: 1em 0;
 	}
+	.caption {
+		font-style: italic;
+	}
 
 	img {
 		max-width: 100%;
+	}
+	.signup {
+		text-align: center;
+		font-size: 150%;
+		a {
+
+		}
 	}
 
 	.docblock {
