@@ -39,3 +39,6 @@ def press_kit():
 def sponsorships():
     return render_template('sponsorships.html')
 
+@app.route('/share.html')
+def share():
+    return render_template('share.html')
