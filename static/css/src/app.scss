@@ -43,7 +43,7 @@ body {
 		pointer-events: none;
 	}
 	footer {
-		height: 10em;
+		height: 17em;
 	}
 	a {
 		color: #6BC9FB;//rgb(184, 229, 253);
@@ -428,3 +428,19 @@ footer {
 	}
 }
 
+
+#mc_embed_signup {
+	clear: both;
+	#mce-EMAIL {
+		padding: 10px;
+		width: 75%;
+		background-color: #222;
+		color: #fff;
+		border: 1px solid #D2D2D2;
+    	border-radius: 3px;
+    	transition: border linear 0.2s, box-shadow linear 0.2s;
+    	&:focus {
+    		border-color: #1aafd1;
+    	}
+	}
+}

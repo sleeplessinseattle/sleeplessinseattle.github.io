@@ -73,7 +73,7 @@
           height: 14em;
           pointer-events: none; }
           body footer {
-            height: 10em; }
+            height: 17em; }
             body a {
               color: #6BC9FB;
               font-weight: 200; }
@@ -322,3 +322,16 @@ footer {
           .width-wrap {
             max-width: 30%;   }
 }
+
+#mc_embed_signup {
+  clear: both; }
+  #mc_embed_signup #mce-EMAIL {
+    padding: 10px;
+    width: 75%;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px;
+    transition: border linear 0.2s, box-shadow linear 0.2s; }
+    #mc_embed_signup #mce-EMAIL:focus {
+      border-color: #1aafd1; }
