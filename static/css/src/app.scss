@@ -283,7 +283,7 @@ header {
 		text-align: center;
 	}
 	.clear {
-		height: 1em;
+		height: 2em;
 	}
 }
 
@@ -443,4 +443,8 @@ footer {
     		border-color: #1aafd1;
     	}
 	}
+}
+
+li, .teamname {
+	margin-bottom: 8px;
 }
