@@ -6,20 +6,23 @@
 <section class="section info">
     <h1>Volunteer</h1>
     <p><strong>Thank you for your interest in volunteering with Sleepless in Seattle!</strong></p>
-    <p>We have launched 9 neighborhood teams to meet, serve, and befriend people experiencing homelessness all around King County. To get involved, please join one of the Facebook groups below and/or reach out to your neighborhood team leader over email. Additional questions can be directed to <a href="mailto:sleeplessinseattlegiving@gmail.com">sleeplessinseattlegiving@gmail.com</a></p>
-    <ul>
-        {% for team in teams %}
-            <li>
-                <div class="teamname"><strong>{{ team.name }}</strong></div>
-            <ul>
-                <li>
-                    Leader: <a href="mailto:{{ team.email }}">{{ team.leader}}</a>
-                </li>
-                <li><a href="{{ team.link }}" target="_blank">{{ team.name}} Facebook Group</a></li>
-            </ul>
-            </li>
-        {% endfor %}
-    </ul>
+    <p>Volunteer opportunities are available for people regardless of experience and qualifications.</p>
+    <p>To get started, please fill out <a href="{{VOLUNTEER_SIGNUP}}">this volunteer signup form</a>, and we will get back to you with a number of placement options including the Big Give on Saturday 12/16/2017.</p>
+    <p>As a volunteer, you will have the opportunity to:</p>
+    <ol>
+        <li>
+            <strong>Build relationships and make friends.</strong>
+            <div class="subtext">We believe that in the context of friendship, "people happen." Friends provide emotional support and empower one another to make healthy life choices.</div>
+        </li>
+        <li>
+            <strong>Meet immediate needs.</strong>
+            <div class="subtext">Teams will help provide basic life essentials like food, water, sleeping bags, as needs arises.</div>
+        </li>
+        <li>
+            <strong>Make referrals to appropriate social services.</strong>
+            <div class="subtext">Teams will partner with appropriate nonprofits, businesses, and social services to make referrals (e.g. long-term housing options).</div>
+        </li>
+    </ol>
     <div class="clear"></div>
     <a href="https://www.google.com/maps/d/edit?hl=en&authuser=0&mid=zEBz4GhR1yPU.kKiNBGoPDd4o" target="_blank">
         <img src="{{ url_for('static', filename='img/2015map.png') }}" alt="Neighborhood map" class="map_img">
