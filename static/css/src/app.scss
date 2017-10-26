@@ -91,7 +91,7 @@ body {
 	background-color: #44698a;
 	border: 2px solid #557a9b;
 	border-radius: 3px;
-	font-size: 1.3rem;
+	font-size: inherit;
 	padding: 0.5rem 1rem;
 	color: #ddd;
 	text-shadow: 1px 1px 0 #0b2c4d;
@@ -108,6 +108,9 @@ body {
 	&:active {
 		top: 1px;
 		box-shadow: 1px 1px 0 #0b2c4d;
+	}
+	&:hover {
+		color: #eee;
 	}
 }
 
@@ -374,20 +377,27 @@ footer {
 		width: 49%;
 
 		li {
+			font-size: 0.8em;
 			list-style: none;
-			padding: .4rem 0;
+			padding: .2rem 0;
 
 			a {
-				border-bottom: 1px dotted white;
 				text-decoration: none;
 				color: #ccc;
+				&:hover {
+					color: #eee;
+				}
 			}
 		}
 	}
 }
 
 
-
+ul.nobullet {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
 /*
  * Breakpoints
@@ -433,14 +443,13 @@ footer {
 	clear: both;
 	#mce-EMAIL {
 		padding: 10px;
-		width: 75%;
+		width: 50%;
 		background-color: #222;
 		color: #fff;
-		border: 1px solid #D2D2D2;
-    	border-radius: 3px;
+		border: 1px solid #ccc;
     	transition: border linear 0.2s, box-shadow linear 0.2s;
     	&:focus {
-    		border-color: #1aafd1;
+    		border-color: #ddd;
     	}
 	}
 }
