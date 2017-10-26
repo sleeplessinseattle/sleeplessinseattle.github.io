@@ -42,50 +42,51 @@
 
                   .ico-vimeo:before {
                     content: ""; }
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0; }
 
-  html {
-    padding: 0;
-    height: 100%; }
+                    * {
+                      -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+                      margin: 0; }
 
-    body {
-      height: 100%;
-      padding: 0;
-      background: #243044 url("../img/bg.jpg") no-repeat center;
-      background-size: cover;
-      background-attachment: fixed;
-      font-family: expo-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-weight: 200;
-      font-size: 16px;
-      color: #F4F7FD;
-      text-shadow: 1px 1px 1px #424242;
-      letter-spacing: 1px; }
-      body .page-wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        margin: 0 auto -14em;
-        background-color: rgba(0, 0, 0, 0.3); }
-        body .push {
-          height: 14em;
-          pointer-events: none; }
-          body footer {
-            height: 17em; }
-            body a {
-              color: #6BC9FB;
-              font-weight: 200; }
-              body a.btn {
-                font-weight: 200; }
-                body a.no-decor {
-                  text-decoration: none; }
-                  body a.secondary-link {
-                    text-decoration: none;
-                    border-bottom: 1px dotted white; }
-      body p {
-        line-height: 1.3em; }
+                      html {
+                        padding: 0;
+                        height: 100%; }
+
+                        body {
+                          height: 100%;
+                          padding: 0;
+                          background: #243044 url("../img/bg.jpg") no-repeat center;
+                          background-size: cover;
+                          background-attachment: fixed;
+                          font-family: expo-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+                          font-weight: 200;
+                          font-size: 16px;
+                          color: #F4F7FD;
+                          text-shadow: 1px 1px 1px #424242;
+                          letter-spacing: 1px; }
+                          body .page-wrap {
+                            min-height: 100%;
+                            height: auto !important;
+                            height: 100%;
+                            margin: 0 auto -14em;
+                            background-color: rgba(0, 0, 0, 0.3); }
+                            body .push {
+                              height: 14em;
+                              pointer-events: none; }
+                              body footer {
+                                height: 17em; }
+                                body a {
+                                  color: #6BC9FB;
+                                  font-weight: 200; }
+                                  body a.btn {
+                                    font-weight: 200; }
+                                    body a.no-decor {
+                                      text-decoration: none; }
+                                      body a.secondary-link {
+                                        text-decoration: none;
+                                        border-bottom: 1px dotted white; }
+                          body p {
+                            line-height: 1.3em; }
 
 .clear:after {
   content: ".";
@@ -100,7 +101,7 @@
   background-color: #44698a;
   border: 2px solid #557a9b;
   border-radius: 3px;
-  font-size: 1.3rem;
+  font-size: inherit;
   padding: 0.5rem 1rem;
   color: #ddd;
   text-shadow: 1px 1px 0 #0b2c4d;
@@ -114,6 +115,8 @@
     .btn:active {
       top: 1px;
       box-shadow: 1px 1px 0 #0b2c4d; }
+      .btn:hover {
+        color: #eee; }
 
 .overlay {
   position: fixed;
@@ -287,21 +290,28 @@ footer {
       padding: 2rem 1.5rem;
       width: 49%; }
       footer ul li {
+        font-size: 0.8em;
         list-style: none;
-        padding: 0.4rem 0; }
+        padding: 0.2rem 0; }
         footer ul li a {
-          border-bottom: 1px dotted white;
           text-decoration: none;
           color: #ccc; }
+          footer ul li a:hover {
+            color: #eee; }
 
-@media screen and (max-width: 43rem) {
-  header {
-    width: 90%;
-    max-width: 100%;   }
-    header .logo {
-      width: 70%;   }
+ul.nobullet {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+  @media screen and (max-width: 43rem) {
+    header {
+      width: 90%;
+      max-width: 100%;   }
       header .logo {
-        opacity: 0.83;   }
+        width: 70%;   }
+        header .logo {
+          opacity: 0.83;   }
 }
 
 @media screen and (max-width: 50rem) {
@@ -327,14 +337,13 @@ footer {
   clear: both; }
   #mc_embed_signup #mce-EMAIL {
     padding: 10px;
-    width: 75%;
+    width: 50%;
     background-color: #222;
     color: #fff;
-    border: 1px solid #D2D2D2;
-    border-radius: 3px;
+    border: 1px solid #ccc;
     transition: border linear 0.2s, box-shadow linear 0.2s; }
     #mc_embed_signup #mce-EMAIL:focus {
-      border-color: #1aafd1; }
+      border-color: #ddd; }
 
 li, .teamname {
   margin-bottom: 8px; }

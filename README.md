@@ -1,5 +1,3 @@
-## IMPORTANT NOTE: latest set of changes were done on top level directly, so do NOT run freeze.py until underlying files updated.
-
 ## Setup
 
 ```
