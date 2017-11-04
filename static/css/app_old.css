@@ -42,40 +42,41 @@
 
                   .ico-vimeo:before {
                     content: ""; }
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0; }
 
-  html {
-    height: 100%;
-    padding: 0; }
+                    * {
+                      -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+                      margin: 0; }
 
-    body {
-      height: 100%;
-      padding: 0;
-      background: #243044 url("../img/bg.jpg") no-repeat center;
-      background-size: cover;
-      background-attachment: fixed;
-      font-family: expo-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-weight: 200;
-      font-size: 16px;
-      color: #ebf0fa;
-      text-shadow: 1px 1px 2px black;
-      line-height: 1.3em;
-      letter-spacing: 1px; }
-      body a {
-        color: white;
-        font-weight: 200; }
-        body a.btn {
-          font-weight: 200; }
-          body a.no-decor {
-            text-decoration: none; }
-            body a.secondary-link {
-              text-decoration: none;
-              border-bottom: 1px dotted white; }
-      body p {
-        line-height: 1.3em; }
+                      html {
+                        height: 100%;
+                        padding: 0; }
+
+                        body {
+                          height: 100%;
+                          padding: 0;
+                          background: #243044 url("../img/bg.jpg") no-repeat center;
+                          background-size: cover;
+                          background-attachment: fixed;
+                          font-family: expo-sans-pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+                          font-weight: 200;
+                          font-size: 16px;
+                          color: #ebf0fa;
+                          text-shadow: 1px 1px 2px black;
+                          line-height: 1.3em;
+                          letter-spacing: 1px; }
+                          body a {
+                            color: white;
+                            font-weight: 200; }
+                            body a.btn {
+                              font-weight: 200; }
+                              body a.no-decor {
+                                text-decoration: none; }
+                                body a.secondary-link {
+                                  text-decoration: none;
+                                  border-bottom: 1px dotted white; }
+                          body p {
+                            line-height: 1.3em; }
 
 .btn {
   position: relative;
